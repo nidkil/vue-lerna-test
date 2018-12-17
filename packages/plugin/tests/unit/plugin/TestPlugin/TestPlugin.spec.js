@@ -16,7 +16,7 @@ describe('TestPlugin', () => {
   })
 
   it('should have the plugin version', () => {
-    const expectedVersion = require('root/package.json').version
+    const expectedVersion = require('@/package.json').version
     const localVue = createLocalVue()
     localVue.use(TestPlugin)
     expect(localVue.prototype.$tst.version).toBe(expectedVersion)

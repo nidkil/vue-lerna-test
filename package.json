@@ -1,7 +1,7 @@
 {
   "name": "vue-lerna-test",
   "private": true,
-  "description": "A project to test Vue 2with Lerna using a plugin and example application supporting SemVer and Conventional Commit standard",
+  "description": "A project to test Vue 2 with Lerna using a plugin and example application supporting SemVer and Conventional Commit standard",
   "keywords": [
     "Vue 2",
     "Vue CLI 3",
@@ -23,15 +23,16 @@
   "bugs": "https://github.com/nidkil/vue-lerna-test/issues",
   "homepage": "https://github.com/nidkil/vue-lerna-test#readme",
   "scripts": {
-    "postinstall": "lerna bootstrap --hoist",
-    "serve:ui": "lerna run --scope=example-ui --stream serve:ui",
+    "postinstall": "lerna bootstrap",
+    "serve:ui": "lerna run --scope=example-ui serve:ui --stream",
+    "test": "lerna run test --stream",
     "cz:commit": "git cz",
     "cz:retry": "git cz --retry",
     "cl": "commitlint",
     "cl:last": "commitlint --edit",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
-    "lint:error-only": "lerna run lint:error-only",
+    "lint:error-only": "lerna run lint:error-only --stream",
     "readme:toc": "markdown-toc README.md -i --maxdepth=2 --bullets=-",
     "build": "lerna run build",
     "release": "nodenv --env ./.env.local --exec lerna run release --stream"
@@ -39,6 +40,7 @@
   "engines": {
     "node": ">=6"
   },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-conventional": "^7.1.2",
@@ -48,10 +50,10 @@
     "markdown-toc": "^1.2.0",
     "release-it": "^9.1.0"
   },
+  "resolutions": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {}
+  }
 }

@@ -4,7 +4,7 @@ const optionsDefaults = {
 const pluginName = 'TestPlugin'
 const version = require('../../package.json').version
 const plugin = {
-  install (Vue, options) {
+  install(Vue, options) {
     options = Object.assign({}, optionsDefaults, options)
     const debug = options.debug || false
     // eslint-disable-next-line no-console
