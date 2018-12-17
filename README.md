@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/nidkil/vue-lerna-test/master/public/vue-test-plugin-logo.png" alt="vue-lerna-test logo" width="200"/>
 </p>
 <p align="center" style="font-size: 2.0em"><b>vue-lerna-test</b></p>
-<p align="center" style="font-size: 0.5em">A project to test Vue 2 with Lerna using a plugin and example application supporting SemVer and Conventional Commit standard</p>
+<p align="center" style="font-size: 0.5em">A project to test Vue 2 with Lerna</p>
 
 [![Build status](https://travis-ci.com/nidkil/vue-lerna-test.svg?branch=master)](https://travis-ci.com/nidkil/vue-lerna-test)
 [![Coverage Status](https://coveralls.io/repos/github/nidkil/vue-lerna-test/badge.svg)](https://coveralls.io/github/nidkil/vue-lerna-test)
@@ -27,10 +27,18 @@ I am moving a number of projects to a monorepo setup. During this process I ran 
 Nothing to fancy, but it might be of help to others setting up a project for Vue with Lerna, so I will make it generally available. Enjoy!
 
 <a name="toc">
-  <details>
-    <summary><strong>Table of Contents</strong> (click to expand)</summary>
-      <!-- toc -->
-  </details>
+  <summary><strong>Table of Contents</strong> (click to expand)</summary>
+
+<!-- toc -->
+
+- [Project setup](#project-setup)
+- [Road map](#road-map)
+- [Contributing](#contributing)
+- [Support & brag about us](#support--brag-about-us)
+- [Author](#author)
+
+<!-- tocstop -->
+
 </a>
 
 ## Project setup
@@ -89,7 +97,7 @@ git cz
 
 [Go to Table of Contents](#toc)
 
-## Roadmap
+## Road map
 
 Currently there is nothing on the roadmap. Suggestions? Please submit an issue.
 

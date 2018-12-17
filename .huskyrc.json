@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "lerna run test && lerna run lint:fix",
+    "pre-commit": "lerna run test && lerna run lint:fix && npm run readme:toc",
     "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   }
 }
