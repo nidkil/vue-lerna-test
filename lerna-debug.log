@@ -1,0 +1,14 @@
+0 silly argv { _: [ 'add' ],
+0 silly argv   scope: 'vue-lerna-test/example-ui',
+0 silly argv   private: true,
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '3.6.0',
+0 silly argv   '$0': '..\\..\\node_modules\\lerna\\cli.js',
+0 silly argv   pkg: 'vue-lerna-teest/plugin' }
+1 notice cli v3.6.0
+2 verbose rootPath C:\dev\myrepos\vue-lerna-test
+3 info versioning independent
+4 error Error: exited with error code: 128
+4 error     at ChildProcess.<anonymous> (C:\dev\myrepos\vue-lerna-test\node_modules\pacote\lib\util\finished.js:12:19)
+4 error     at ChildProcess.emit (events.js:182:13)
+4 error     at maybeClose (internal/child_process.js:961:16)

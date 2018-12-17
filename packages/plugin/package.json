@@ -1,0 +1,36 @@
+{
+  "name": "@vue-lerna-test/plugin",
+  "version": "0.0.0",
+  "module": "dist",
+  "browser": "dist/plugin/TestPlugin.umd.js",
+  "scripts": {
+    "lint": "vue-cli-service lint -c .eslintrc.js --format codeframe src tests",
+    "lint:fix": "vue-cli-service lint --fix -c .eslintrc.js --format codeframe src tests",
+    "lint:error-only": "vue-cli-service lint -c .eslintrc.js --quiet --format codeframe src tests",
+    "test": "npm run test:unit",
+    "test:unit": "vue-cli-service test:unit",
+    "cz:commit": "git cz",
+    "cz:retry": "git cz --retry",
+    "build": "vue-cli-service build --target lib --name TestPlugin --dest dist/plugin plugin/TestPlugin/index.js",
+    "postbuild": "vue-build-helper all",
+    "release": "release-it --verbose"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-plugin-unit-jest": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/eslint-config-prettier": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "vue-build-helper": "^0.1.12",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

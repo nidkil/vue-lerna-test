@@ -1,0 +1,26 @@
+{
+  "increment": "conventional:angular",
+  "scripts" : {
+    "beforeStart": "npm run test && npm run lint:error-only",
+    "afterBump": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "beforeStage": "npm run build",
+    "changelog": "conventional-changelog -p angular | tail -n +3"
+  },
+  "git" : {
+    "addUntrackedFiles": false,
+    "requireCleanWorkingDir": true,
+    "commitMessage": "chore: release ${name} ${version}",
+    "tagName": "v${version}",
+    "tagAnnotation": "Release v${version}",
+    "tag": false
+  },
+  "npm": {
+    "publish": false,
+    "tag": "latest"
+  },
+  "github": {
+    "release": false,
+    "releaseName": "🚀 Release ${name} ${version}",
+    "tokenRef": "GITHUB_TOKEN"
+  }
+}
