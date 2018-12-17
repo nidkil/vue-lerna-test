@@ -35,7 +35,7 @@
     "lint:error-only": "lerna run lint:error-only --stream",
     "readme:toc": "markdown-toc README.md -i --maxdepth=2 --bullets=-",
     "build": "lerna run build",
-    "release": "nodenv --env ./.env.local --exec lerna run release --stream"
+    "release": "nodenv --env ./.env.local --exec lerna run release"
   },
   "engines": {
     "node": ">=6"
